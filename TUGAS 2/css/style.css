@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: aquamarine;
+    padding: 10px;
+    text-align: right;
+}
+/* end of Header */
+
+/* Container */
+.container {
+    display: flex;
+    min-height: 90vh;
+}
+/* end of Container */
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    min-width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc; /* Garis pemisah antar item menu */
+}
+
+.sidebar ul li:last-child {
+    border-bottom: none; /* Menghapus garis pemisah pada item menu terakhir */
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    background-color: aquamarine;
+    color: #333;
+    display: block; /* Membuat link menjadi blok agar dapat menempati seluruh lebar sidebar */
+    transition: background-color 0.3s; /* Transisi warna latar belakang saat dihover */
+    border-radius: 5px; /* Memberikan sudut yang sedikit membulat pada item menu */
+    padding: 8px 16px; /* Padding agar item menu tidak terlalu rapat dengan tepi sidebar */
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a:active {
+    background-color: #ddd; /* Warna latar belakang saat dihover */
+}
+/* end of Sidebar */
+
+/* Content */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    min-width: 0;
+}
+/* end of Content */
+
+.kategori {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.kategori a {
+    display: inline-block;
+    margin: 0 20px; /* Menambahkan jarak horizontal antara gambar */
+    position:relative; /* Menetapkan posisi relatif untuk menetapkan efek hover */
+}
+
+.kategori img {
+    width: 200px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    height: auto;
+    transition: transform 0.3s ease; /* Menambahkan transisi untuk efek hover */
+}
+
+.kategori a:hover img {
+    transform: scale(1.1); /* Memperbesar gambar saat dihover */
+}
+
+.desc p {
+    text-align: justify;
+}
+
+.mix-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* CSS untuk setiap item */
+.item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    width: 30%;
+}
+
+/* CSS untuk gambar */
+.item-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* CSS untuk teks */
+.item-text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* CSS untuk tautan */
+.item-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.item-link:hover {
+    text-decoration: underline;
+}
+
+
+.detail {
+    background-color: #f4f4f4; /* Warna latar belakang */
+    padding: 20px; /* Padding untuk memberikan ruang di sekitar konten */
+    border-radius: 10px; /* Menggunakan sudut yang membulat pada elemen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk memberikan kedalaman */
+}
+
+.detail img {
+    width: 500px;
+    height: auto; /* Mengatur tinggi gambar agar proporsional */
+    border-radius: 10px; /* Memberikan sudut yang membulat pada gambar */
+    margin-bottom: 20px; /* Memberikan jarak antara gambar dan teks */
+}
+
+.detail p {
+    line-height: 1.6; /* Menambahkan spasi antarbaris untuk keterbacaan yang lebih baik */
+    margin-bottom: 10px; /* Memberikan jarak antara paragraf */
+    text-align: justify;
+}
+
+.detail a {
+    color: #333; /* Warna teks untuk tautan */
+    text-decoration: none; /* Menghapus garis bawah dari tautan */
+}
+
+.detail a:hover {
+    text-decoration: underline; /* Memberikan garis bawah saat tautan dihover */
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    
+}
+/* end of Footer */
