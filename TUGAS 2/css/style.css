@@ -3,30 +3,28 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Header */
-header {
+.container{
+    width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.header{
     background-color: #333;
     color: aquamarine;
     padding: 10px;
     text-align: right;
 }
-/* end of Header */
 
-/* Container */
-.container {
-    display: flex;
-    min-height: 90vh;
+.header h3{
+    margin-right: 10px;
 }
-/* end of Container */
 
-/* Sidebar */
 .sidebar {
     width: 200px;
-    min-width: 200px;
-    background-color: #f4f4f4;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: left;
+    min-height: 90vh;
 }
 
 .sidebar ul {
@@ -58,25 +56,21 @@ header {
 .sidebar ul li a:active {
     background-color: #ddd; /* Warna latar belakang saat dihover */
 }
-/* end of Sidebar */
 
-/* Content */
 .content {
-    flex-grow: 1;
-    padding: 20px;
-    min-width: 0;
-}
-/* end of Content */
-
-.kategori {
-    margin-top: 20px;
-    text-align: center;
+    float: right;
+    width: 910px;
+    padding: 10px;
+    min-height: 90vh;
 }
 
 .kategori a {
     display: inline-block;
-    margin: 0 20px; /* Menambahkan jarak horizontal antara gambar */
     position:relative; /* Menetapkan posisi relatif untuk menetapkan efek hover */
+}
+
+.desc p {
+    text-align: justify;
 }
 
 .kategori img {
@@ -89,26 +83,19 @@ header {
     transform: scale(1.1); /* Memperbesar gambar saat dihover */
 }
 
-.desc p {
-    text-align: justify;
-}
-
-.mix-container {
+.items {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
 }
 
-/* CSS untuk setiap item */
 .item {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     background-color: #f4f4f4;
     width: 30%;
 }
 
-/* CSS untuk gambar */
 .item-img {
     width: 100%;
     height: auto;
@@ -116,13 +103,11 @@ header {
     margin-bottom: 10px;
 }
 
-/* CSS untuk teks */
 .item-text {
     font-size: 16px;
     line-height: 1.6;
 }
 
-/* CSS untuk tautan */
 .item-link {
     color: blue;
     text-decoration: none;
@@ -132,43 +117,44 @@ header {
     text-decoration: underline;
 }
 
-
 .detail {
-    background-color: #f4f4f4; /* Warna latar belakang */
-    padding: 20px; /* Padding untuk memberikan ruang di sekitar konten */
-    border-radius: 10px; /* Menggunakan sudut yang membulat pada elemen */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk memberikan kedalaman */
+    background-color: #f4f4f4; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .detail img {
     width: 500px;
-    height: auto; /* Mengatur tinggi gambar agar proporsional */
-    border-radius: 10px; /* Memberikan sudut yang membulat pada gambar */
-    margin-bottom: 20px; /* Memberikan jarak antara gambar dan teks */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .detail p {
-    line-height: 1.6; /* Menambahkan spasi antarbaris untuk keterbacaan yang lebih baik */
-    margin-bottom: 10px; /* Memberikan jarak antara paragraf */
+    line-height: 1.6; 
+    margin-bottom: 10px;
     text-align: justify;
 }
 
 .detail a {
-    color: #333; /* Warna teks untuk tautan */
-    text-decoration: none; /* Menghapus garis bawah dari tautan */
+    color: #333;
+    text-decoration: none;
 }
 
 .detail a:hover {
-    text-decoration: underline; /* Memberikan garis bawah saat tautan dihover */
+    text-decoration: underline;
 }
 
-
-/* Footer */
-footer {
+.footer {
     background-color: #333;
     color: #fff;
-    padding: 10px;
     text-align: center;
-    
+    border-style: solid;
 }
-/* end of Footer */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
