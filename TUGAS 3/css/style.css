@@ -81,8 +81,10 @@ body {
 }
 
 .items {
-    display: flex;
-    justify-content:space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    justify-items: center;
 }
 
 .item {
@@ -90,7 +92,8 @@ body {
     padding: 10px;
     border-radius: 10px;
     background-color: #f4f4f4;
-    width: 30%;
+    width: 80%;
+    margin: 10px
 }
 
 .item-img {
