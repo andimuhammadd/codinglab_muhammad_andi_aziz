@@ -1,160 +1,140 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    border: 0;
+}
+body{
+    background-color:bisque
 }
 
-.container{
-    width: 1200px;
+.wrap{
+    background-color: beige;
+    max-width: 1920px;
     margin: auto;
+    min-height: 100vh;
 }
 
 .header{
-    background-color: #333;
-    color: aquamarine;
-    padding: 10px;
-    text-align: right;
-}
-
-.header h3{
-    margin-right: 10px;
-}
-
-.sidebar {
-    width: 200px;
-    padding: 20px;
-    float: left;
-    min-height: 90vh;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar ul li {
-    padding: 20px 0;
-    border-bottom: 1px solid #ccc; /* Garis pemisah antar item menu */
-}
-
-.sidebar ul li:last-child {
-    border-bottom: none; /* Menghapus garis pemisah pada item menu terakhir */
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    background-color: aquamarine;
-    color: #333;
-    display:block; /* Membuat link menjadi blok agar dapat menempati seluruh lebar sidebar */
-    transition: background-color 0.3s; /* Transisi warna latar belakang saat dihover */
-    border-radius: 5px; /* Memberikan sudut yang sedikit membulat pada item menu */
-    padding: 8px 16px; /* Padding agar item menu tidak terlalu rapat dengan tepi sidebar */
-}
-
-.sidebar ul li a:hover {
-    background-color: #ddd; /* Warna latar belakang saat dihover */
-}
-
-.content {
-    float: right;
-    width: 910px;
-    padding: 10px;
-    min-height: 90vh;
-}
-
-.kategori a {
-    display: inline-block;
-}
-
-.desc p {
-    text-align: justify;
-}
-
-.kategori img {
-    width: 200px;
-    height: auto;
-    transition: transform 0.3s ease; /* Menambahkan transisi untuk efek hover */
-}
-
-.kategori a:hover img {
-    transform: scale(1.1); /* Memperbesar gambar saat dihover */
-}
-
-.items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 10px;
-    justify-items: center;
-}
-
-.item {
+    background-color: darkgray;
     text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #f4f4f4;
-    width: 80%;
-    margin: 10px
+    padding: 20px;
 }
 
-.item-img {
+.banner{
+    background-color: darkgray;
+}
+
+.banner .container .row {
+   display: flex
+}
+
+.banner-text{
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.item-text {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.item-link {
-    color: blue;
-    text-decoration: none;
-}
-
-.item-link:hover {
-    text-decoration: underline;
-}
-
-.detail {
-    background-color: #f4f4f4; 
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: antiquewhite;
+    height: 400px;
 }
 
-.detail img {
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.banner-background{
+    width: 100%;
+    padding: 20px;
+    background-color: azure;
+    height: 400px;
 }
 
-.detail p {
-    line-height: 1.6; 
+.content{
+    background-color: darkgray;
+}
+
+.why-choose{
+    background-color: aquamarine;
+}
+
+.why-choose .container .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.why-choose .container .row .col-tittle{
+    padding: 20px;
+}
+
+.why-choose .row-items{
+    display: flex;
+    margin: 40px 0px;
+    padding: 20px;
+}
+
+.why-choose .col-item{
+    max-width: 300px;
+    justify-content: space-around;
+}
+
+.why-choose .col-item h6{
     margin-bottom: 10px;
-    text-align: justify;
 }
 
-.detail a {
-    color: #333;
-    text-decoration: none;
-}
-
-.detail a:hover {
-    text-decoration: underline;
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
+.why-choose .text-center{
     text-align: center;
-    padding: 10px;
+    background-color: greenyellow;
+    height: 200px;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+.service{
+    background-color: beige;
+}
+
+.service .container .row{
+    display: flex;
+}
+
+.service .container .row .col{
+    background-color:aqua;
+    height: 200px;
+    width: 100%;
+    border: solid;
+}
+
+.founder{
+    background-color: chocolate;
+}
+
+.department{
+    background-color: cadetblue;
+}
+
+.blog{
+    background-color: darkcyan;
+}
+
+.testimonial{
+    background-color:darkkhaki;
+}
+
+.intro{
+    background-color: goldenrod;
+}
+
+.contact-info{
+    background-color: indigo;
+}
+
+.contact-info .container{
+    padding:20px;
+}
+
+.contact-info .row{
+    display: flex;
+}
+
+.contact-info .col{
+    width: 100%;
+    border:solid;
+    height: 200px;
+}
+
+.footer{
+    background-color:aquamarine;
+    padding: 20px;
+    text-align: center;
 }
